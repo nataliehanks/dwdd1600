@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">  
+    <meta name="description" content="Your ultimate guide to style">
+    <meta name="author" content="Natalie Hanks">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="fashion.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&display=swap" rel="stylesheet">
+    
+<title>Fashion Basics: Home</title>   
+    </head>
+<body>
+    <!--Start of the page header -->
+    <header>
+    <h1>Fashion Basics</h1>
+        <p>Your Ultimate Guide to Style</p>
+    </header> 
+    <!--Start of the page navigation -->
+    <nav>
+    <ul>
+        <li><a href="index.html"> Year-Round</a></li>
+        <li><a href="budget.html">The Budget</a></li>
+        <li><a href="examples.html">Examples</a></li>
+        <li class="active"><a href="consult.html">Request a Consultation</a></li>
+        </ul>
+    
+    </nav>
+    <!--Start of the page main -->
+    <main>
+    <h1>Request a Consultation</h1>
+    <form method="get" class="myform" action="thanks.html">
+        <fieldset>
+        <legend>Customer Information</legend>
+        <label>First Name*<input type="text" name="fname" required></label>
+        <label>Last Name*<input type="text" name="lname" required></label>
+        <label>Cell Number*<input type="tel" name="phone" required placeholder="123-456-7889"></label>
+        </fieldset>
+        
+        <fieldset>
+        <legend>Meeting Type</legend>
+        <label> <input type="radio" name="method" value="phone">Over the Phone</label>
+        <label> <input type="radio" name="method" value="face">In Person </label>
+        <label> <input type="radio" name="method" value="video"> Videocall</label>
+        </fieldset>
+        
+        <fieldset>
+        <legend>Meeting Options</legend>
+        <label> <input type="checkbox" name="tops" value="chosen"> Tops</label>
+       <label> <input type="checkbox" name="bottoms" value="chosen"> Bottoms</label>
+        <label> <input type="checkbox" name="formal" value="chosen"> Formal</label>
+        <label> <input type="checkbox" name="accessories" value="chosen"> Accessories</label>
+        </fieldset>
+        
+        <label>Preferred Meeting Time
+            <select name="time">
+            <option value="none">Please Select</option>
+            <option value="morning">Between 8:00am and 12:00am</option>
+            <option value="noon">Between 12:00am and 3:00pm</option>
+            <option value="afternoon">Between 3:00pm and 6:00pm</option>    
+            </select>
+            </label>
+        
+        <label>Comments
+            <textarea name="comments"></textarea>
+            </label>    
+            
+        <input type="submit" value="Send Consultation Request">
+        
+     </form>         
+       
+    </main>
+    <!--Start of the page footer -->    
+    <footer>
+    <p>&copy; 2024 &bull; Natalie Hanks &bull; <a href="mailto:10874742@gmail.com">Email Us</a></p>
+    </footer>
+    </body>
+
+</html>

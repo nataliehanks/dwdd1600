@@ -1,0 +1,281 @@
+/*prevent problems with different browsers*/
+* {box-sizing: border-box;}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+    font-weight: 300;
+  font-style: normal;
+margin: 0;   
+}
+
+/*header stuff here*/
+header {
+    background-color: #d9c196;
+    padding: 1rem 2vw;
+    display: flex;
+    align-items: flex-end;
+}
+header div {
+    padding-left: 1vw;
+}
+header h1 {
+    margin: 0;
+    color: #401309;
+}
+header p {
+    margin: 0;
+    color: #401309;
+    letter-spacing: .75px;
+}
+
+/*nav stuff here*/
+/*small screens*/
+@media only screen and (max-width: 600px) {
+        nav ul{
+            margin: 0;
+            padding: 0 2vw;
+            list-style-type: none;
+        }
+
+        nav a {
+        display: block;
+        padding: .8rem;
+        text-decoration: none;
+        font-weight: 500;
+        text-transform: uppercase;
+        text-align: center;
+        border-bottom: solid 1px #d9965b;
+        color: #401309;    
+        }
+
+        nav .active a {
+            background-color: #d9965b;
+            background-image: linear-gradient(to bottom, #d9c196, #d9965b);
+            color: #401309;
+        }
+    
+} /*end of media query*/
+
+/*big screens*/
+@media only screen and (min-width: 601px) {
+    
+        nav {
+    background-color: #d9965b;
+}
+nav ul {
+    list-style-type: none;
+    padding: 0 2vw;
+    margin: 0;
+    display: flex;
+}
+nav a {
+    font-size: 1.1rem;
+    text-decoration: none;
+    color: #401309;
+    font-weight: 500;
+    display: block;
+    padding: .83rem 2rem;
+}
+nav li.active a{
+    background-color: #401309;
+    color: #d9965b; 
+}
+nav a:hover{
+    color: white;
+}
+}
+    
+/*end of media query*/
+
+
+/*main stuff here*/
+main {
+    padding: 1rem 2vw;
+}
+main h1 {
+    color: #bf6e3f;  
+}
+main h2 {
+    color: #401309;
+    margin-bottom: .2rem;
+}
+main p {
+    color: #2f3133;
+    margin: .0 0 .3rem 0;
+}
+main ol {
+    padding: .5rem 3vw;
+    background-color: #d9c196;
+    width: 12.5rem;
+    border: 1px solid #401309;
+    border-radius: 5px;
+}
+main dl dt {
+    color: #401309;
+    font-weight: 500;    
+}
+main dl dd {
+    color: #401309;
+    font-size: .9rem;
+}
+
+main ul {
+    list-style-type: circle;
+    line-height: 125%; 
+    padding: .5rem 3vw;
+    background-color: #d9c196;
+    width: 12.5rem;
+    border: 1px solid #401309;
+    border-radius: 5px;
+}
+main ul li {
+    line-height: 125%;
+    margin-bottom: .5rem;
+    font-size: .9rem;
+}
+main address {
+    font-style: normal;
+    background-color: #d9c196;
+    padding: .5rem;
+    width: 12.5rem;
+    border: 1px solid #401309;
+    border-radius: 5px;
+}
+
+main a {
+    color: #401309;   
+}
+main a:hover {
+    color: #bf6e3f;   
+}
+
+figure.wrapped {
+    width: 30%;
+    margin: 0 0 0 2%;
+    float: right;
+}
+figure.wrapped img {
+    width: 100%;
+    height: auto;
+}
+figure.wrapped figcaption {
+    text-align: center;
+    font-size: .75rem;  
+}
+
+.angelohero {
+    width: 100%;
+    margin: 0;
+}
+
+.angelohero img {
+    width: 100%;
+    height: auto;
+}  
+
+div.gallery {
+    display: flex;
+    flex-wrap: wrap; 
+}
+div.gallery figure {
+    margin: .5rem 2% 0 0;
+}
+
+div.gallery img:hover {
+    box-shadow: 0px 0px 10px #401309;
+}
+
+div.gallery figcaption {
+    text-align: center;
+    font-size: .8rem;
+    color: #401309;
+}
+
+.myform fieldset {
+    border: 1px solid #401309;
+    border-radius: 3px;
+    margin-bottom: 1rem;
+}
+
+.myform legend {
+    color: #bf6e3f;
+    font-size: .8rem;
+}
+
+.myform label {
+    margin: .5rem;
+}
+
+.myform label, .myform select, .myform [type=text], .myform [type=tel], .myform textarea {
+    display: block
+}
+
+.myform select, .myform [type=text], .myform [type=tel], .myform textarea {
+    border: solid 1px #401309;
+    padding: .3rem;
+    width: 250px;
+    border-radius: .3rem;
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;    
+}
+
+.myform textarea {
+    height: 6rem;
+}
+
+.myform :required {
+    background-color: #d9c196; 
+}
+
+.myform [type=submit] {
+    background-color: #bf6e3f;
+    border: none;
+    padding: 1rem 2rem;
+    border-radius: 10px;
+    color: white;
+    margin: 1rem 0 0 1vw;
+}
+
+table.tips {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table.tips th {
+    background-color: #401309;
+    color: #bf6e3f;
+    padding: .5rem 2vw;
+    text-align: left;
+}
+
+table.tips td {
+    color: #401309;
+    padding: .4rem 2vw;    
+}
+
+table.tips tr:nth-child(odd) {
+    background-color: #d9c196;
+}
+
+table.tips tr:hover {
+    background-color: #bf6e3f;
+}
+
+/*footer stuff here*/
+footer {
+    background-color: #d9c196;
+    text-align: center;
+    color:  #401309; 
+    padding: 1rem 0;
+    font-size: .8rem;
+}
+
+footer a {
+    color: #401309;
+}
+
+header, nav, main, footer {
+    max-width: 640rem;
+    margin: 0 auto;     
+}
